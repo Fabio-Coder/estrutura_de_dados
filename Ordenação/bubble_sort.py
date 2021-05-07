@@ -1,3 +1,6 @@
+from Analise_de_complexidade.cronometro import cronometro, cronometro_ns
+
+
 def bubble_sort(lista):
     """
     Recebe uma lista de inteiros
@@ -17,8 +20,13 @@ def bubble_sort(lista):
 
 if __name__ == '__main__':
     lista_desordenada = []
-    for x in range(10):
+    elementos = 10000
+    for x in range(elementos,0,-1):
         lista_desordenada.append(x)
-    lista_desordenada = [5,4,3,2,1]
+    inicio = cronometro()
+    inicio_ns = cronometro_ns()
     lista_ordenada = bubble_sort(lista_desordenada)
-    print(lista_ordenada)
+    fim = cronometro()
+    fim_ns = cronometro_ns()
+    print(f'Tempo de execução (s) para {elementos} elementos: {fim-inicio}')
+    print(f'Tempo de execução (ns) para {elementos} elementos: {fim_ns - inicio_ns}')
