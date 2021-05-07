@@ -1,2 +1,2 @@
-# estrutura_de_dados
-Repositórioparacriação e análise de algoritmos
+# Estrutura de dados
+Repositório para criação e análise de algoritmos
