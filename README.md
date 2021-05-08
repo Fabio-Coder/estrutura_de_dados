@@ -1,6 +1,9 @@
 # Estrutura de dados
 Repositório para criação e análise de algoritmos
 
+[![Build Status](https://www.travis-ci.com/Fabio-Coder/estrutura_de_dados.svg?branch=main)](https://www.travis-ci.com/Fabio-Coder/estrutura_de_dados)
+
+
 Aqui estão alguns algoritmos e implementações para
 testá-los e analisar a complexidade dos mesmos.
 
