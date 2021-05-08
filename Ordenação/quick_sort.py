@@ -37,8 +37,8 @@ if __name__ == '__main__':
     quick_sort(lista_exemplo)
     print(lista_exemplo)
 
-    lista_desordenada = []
-    elementos = 990
-    for x in range(elementos, 0, -1):
-        lista_desordenada.append(x)
-    lista_ordenada = quick_sort(lista_desordenada)
+    # lista_desordenada = []
+    # elementos = 990
+    #for x in range(elementos, 0, -1):
+        #lista_desordenada.append(x)
+    #lista_ordenada = quick_sort(lista_desordenada)

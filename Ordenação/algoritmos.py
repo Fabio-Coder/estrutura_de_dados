@@ -1,12 +1,12 @@
 from Analise_de_complexidade.cronometro import cronometro_ns, cronometro
-from Ordenação.quick_sort import quick_sort, divisao, quick_sort_auxiliar
+from Ordenação.quick_sort import quick_sort
 from Ordenação.selection_sort import selection_sort
 from Ordenação.bubble_sort import bubble_sort
 
 algoritmo = 'quick sort'
 print(f'Lista de tempos para o algoritmo {algoritmo}:')
 print('=================================================')
-for i in range(0,1001,100):
+for i in range(0, 1001, 100):
     lista_desordenada = []
     elementos = i
     for x in range(elementos, 0, -1):
@@ -23,7 +23,7 @@ for i in range(0,1001,100):
 algoritmo = 'bubble_sort'
 print(f'Lista de tempos para o algoritmo {algoritmo}:')
 print('=================================================')
-for i in range(0,1000,100):
+for i in range(0, 1000, 100):
     lista_desordenada = []
     elementos = i
     for x in range(elementos, 0, -1):
@@ -40,7 +40,7 @@ for i in range(0,1000,100):
 algoritmo = 'selection sort'
 print(f'Lista de tempos para o algoritmo {algoritmo}:')
 print('=================================================')
-for i in range(0,10001,1000):
+for i in range(0, 10001, 1000):
     lista_desordenada = []
     elementos = i
     for x in range(elementos, 0, -1):
