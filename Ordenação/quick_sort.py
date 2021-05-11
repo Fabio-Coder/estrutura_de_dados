@@ -43,4 +43,3 @@ if __name__ == '__main__':
         lista.append(x)
     quick_sort(lista)
     print(lista)
-
