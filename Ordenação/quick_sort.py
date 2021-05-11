@@ -16,11 +16,11 @@ def divisao(lista, primeiro, ultimo):
     sentinela = False
 
     while not sentinela:
+        while esquerda <= direita and lista[direita] >= pivo:
+            direita -= 1
+
         while esquerda <= direita and lista[esquerda] <= pivo:
             esquerda += 1
-
-        while direita >= esquerda and lista[direita] >= pivo:
-            direita -= 1
 
         if direita < esquerda:
             sentinela = True
@@ -36,10 +36,11 @@ if __name__ == '__main__':
     lista_exemplo = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
     quick_sort(lista_exemplo)
     print(lista_exemplo)
-'''
-    # lista_desordenada = []
-    # elementos = 990
-    #for x in range(elementos, 0, -1):
-        #lista_desordenada.append(x)
-    #lista_ordenada = quick_sort(lista_desordenada)
-'''
+
+    lista = []
+    elementos = 1000
+    for x in range(elementos, 0, -1):
+        lista.append(x)
+    quick_sort(lista)
+    print(lista)
+
