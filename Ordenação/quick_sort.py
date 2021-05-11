@@ -4,14 +4,14 @@ def quick_sort(lista):
 
 def quick_sort_auxiliar(lista, primeiro, ultimo):
     if primeiro < ultimo:
-        ponto_de_ruptura = divisao(lista, primeiro, ultimo)
+        ponto_de_ruptura = particionamento(lista, primeiro, ultimo)
         quick_sort_auxiliar(lista, primeiro, ponto_de_ruptura - 1)
         quick_sort_auxiliar(lista, ponto_de_ruptura + 1, ultimo)
 
 
-def divisao(lista, primeiro, ultimo):
-    pivo = lista[primeiro]
-    esquerda = primeiro + 1
+def particionamento(lista, primeiro, ultimo):
+    pivo = lista[ultimo]
+    esquerda = primeiro
     direita = ultimo
     sentinela = False
 
@@ -19,7 +19,7 @@ def divisao(lista, primeiro, ultimo):
         while esquerda <= direita and lista[esquerda] <= pivo:
             esquerda += 1
 
-        while direita >= esquerda and lista[direita] >= pivo:
+        while esquerda <= direita and lista[direita] >= pivo:
             direita -= 1
 
         if direita < esquerda:
